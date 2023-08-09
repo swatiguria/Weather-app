@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div class="navbar">
+          <a href="#" target="_blank"
+            ><img src="images/share-icon.svg" alt="no image"
+          /></a>
+          <div class="drop-down">
+            <input
+              onclick="dropDown()"
+              type="text"
+              class="city-name"
+              id="setCity"
+              placeholder="enter city name"
+            />
+            <ul id="list" class="scroll-down dropdown-toggle">
+              <li>Bali</li>
+              <li>Brasilia</li>
+              <li>Chicago</li>
+              <li>Jakarta</li>
+              <li>Kolkata</li>
+              <li>Kuala Lumpur</li>
+              <li>London</li>
+              <li>Mexico City</li>
+              <li>New York</li>
+              <li>Ottawa</li>
+              <li>Paris</li>
+              <li>Singapore</li>
+              <li>Vostok</li>
+            </ul>
+          </div>
+          <a href="#" target="_blank"
+            ><img src="./images/chat.png" alt="chat_image"
+          /></a>
+        </div>
+        <div class="weather">
+          <div id="weatherIcon"></div>
+          <div class="temp">
+            <div id="temparature"></div>
+            <div id="feels-like"></div>
+          </div>
+        </div>
+        <p class="paragraph">
+          Make the most of this nice weather <br />
+          that I generated for you. Or else
+        </p>
+      </div>
+    </center>
+    <script src="js/localAPI.js"></script>
+  </body>
+</html>
